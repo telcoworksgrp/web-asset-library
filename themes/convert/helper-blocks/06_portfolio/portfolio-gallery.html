@@ -1,0 +1,236 @@
+<!-- COPY ALL CODES AND PASTE TO SKELETON.HTML FILE-->
+
+<!-- IMPORTANT : YOU SHOULD TO ADD PORTFOLIO JS FILES AFTER STANRAD JQUERY -->
+
+    <!-- PORTFOLIO -->
+
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $('#myCarousel').carousel({
+            interval: 5000
+        });
+        $('#carousel-text').html($('#slide-content-0').html());
+        //Handles the carousel thumbnails
+        $('[id^=carousel-selector-]').click( function(){
+            var id = this.id.substr(this.id.lastIndexOf("-") + 1);
+            var id = parseInt(id);
+            $('#myCarousel').carousel(id);
+        });
+        // When the carousel slides, auto update the text
+        $('#myCarousel').on('slid.bs.carousel', function (e) {
+            var id = $('.item.active').data('slide-number');
+            $('#carousel-text').html($('#slide-content-'+id).html());
+        });
+    });
+    </script>
+
+
+    <!-- ADD YOUR PORTFOLIO -->
+
+        <section class="section">
+            <div class="container">
+                <div class="single-gallery-media">
+                    <div class="row">
+                        <div class="col-xs-12" id="slider">
+                            <!-- Top part of the slider -->
+                            <div class="row">
+                                <div class="col-sm-7" id="carousel-bounding-box">
+                                    <div class="carousel slide" id="myCarousel">
+                                        <!-- Carousel items -->
+                                        <div class="carousel-inner">
+                                            <div class="active item" data-slide-number="0">
+                                                <img src="upload/single_portfolio_01.jpg" alt="" class="img-responsive"></div>
+
+                                            <div class="item" data-slide-number="1">
+                                                <img src="upload/single_portfolio_02.jpg" alt="" class="img-responsive"></div>
+
+                                            <div class="item" data-slide-number="2">
+                                                <img src="upload/single_portfolio_03.jpg" alt="" class="img-responsive"></div>
+
+                                            <div class="item" data-slide-number="3">
+                                                <img src="upload/single_portfolio_04.jpg" alt="" class="img-responsive"></div>
+
+                                            <div class="item" data-slide-number="4">
+                                                <img src="upload/single_portfolio_05.jpg" alt="" class="img-responsive"></div>
+
+                                            <div class="item" data-slide-number="5">
+                                                <img src="upload/single_portfolio_06.jpg" alt="" class="img-responsive"></div>
+                                        </div>
+                                        <!-- Carousel nav -->
+                                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                            <span class="fa fa-angle-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                            <span class="fa fa-angle-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-5" id="carousel-text"></div>
+
+                                <div id="slide-content" style="display: none;">
+                                    <div id="slide-content-0">
+                                        <h4><a href="#">Web Design</a></h4>
+                                        <h2>Laptop in Desktop</h2>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                                        <p>but also the leap into electronic, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.</p>
+                                        <a href="#" class="btn btn-primary">Launch Project</a>
+
+                                        <hr class="invis">
+                                        
+                                        <div class="social-version-1 originalcolor">
+                                            <ul class="list-inline">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div id="slide-content-1">
+                                        <h4><a href="#">Graphic Design</a></h4>
+                                        <h2>ProBuyer Design</h2>
+                                        <p>But also the leap into electronic, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.</p>
+
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                                        <a href="#" class="btn btn-primary">Launch Project</a>
+
+                                        <hr class="invis">
+                                        
+                                        <div class="social-version-1 originalcolor">
+                                            <ul class="list-inline">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div id="slide-content-2">
+                                        <h4><a href="#">App Design</a></h4>
+                                        <h2>Cups of Coffee</h2>
+                                        <p>It was popularised in the 1960s with the release of Letraset sheets But also the leap into electronic, remaining essentially unchanged..</p>
+
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                                        <a href="#" class="btn btn-primary">Launch Project</a>
+                                        <hr class="invis">
+                                        
+                                        <div class="social-version-1 originalcolor">
+                                            <ul class="list-inline">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div id="slide-content-3">
+                                        <h4><a href="#">SEO Service</a></h4>
+                                        <h2>Material Web Club</h2>
+                                        <p>It was popularised in the 1960s with the release of Letraset sheets But also the leap into electronic, remaining essentially unchanged..</p>
+
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                                        <a href="#" class="btn btn-primary">Launch Project</a>
+                                        <hr class="invis">
+                                        
+                                        <div class="social-version-1 originalcolor">
+                                            <ul class="list-inline">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div id="slide-content-4">
+                                        <h4><a href="#">Interview</a></h4>
+                                        <h2>Happy Business Guys</h2>
+                                        <p>It was popularised in the 1960s with the release of Letraset sheets But also the leap into electronic, remaining essentially unchanged..</p>
+
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                                        <a href="#" class="btn btn-primary">Launch Project</a>
+                                        <hr class="invis">
+                                        
+                                        <div class="social-version-1 originalcolor">
+                                            <ul class="list-inline">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div id="slide-content-5">
+                                        <h4><a href="#">App Design</a></h4>
+                                        <h2>Intermedia Re-Design</h2>
+                                        <p>It was popularised in the 1960s with the release of Letraset sheets But also the leap into electronic, remaining essentially unchanged..</p>
+
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                                        <a href="#" class="btn btn-primary">Launch Project</a>
+                                        <hr class="invis">
+                                        
+                                        <div class="social-version-1 originalcolor">
+                                            <ul class="list-inline">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/Slider-->
+
+                    <hr class="invis">
+
+                    <div class="row hidden-xs" id="slider-thumbs">
+                        <!-- Bottom switcher of slider -->
+                        <ul class="hide-bullets clearfix">
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-0"><img src="upload/single_portfolio_01.jpg" alt="" class="img-responsive"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-1"><img src="upload/single_portfolio_02.jpg" alt="" class="img-responsive"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-2"><img src="upload/single_portfolio_03.jpg" alt="" class="img-responsive"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-3"><img src="upload/single_portfolio_04.jpg" alt="" class="img-responsive"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-4"><img src="upload/single_portfolio_05.jpg" alt="" class="img-responsive"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-5"><img src="upload/single_portfolio_06.jpg" alt="" class="img-responsive"></a>
+                            </li>
+                        </ul>
+                    </div><!-- end row -->
+                </div><!-- end single-gallery-media -->
+            </div><!-- end container -->
+        </section><!-- end section -->

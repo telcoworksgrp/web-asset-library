@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- SITE META -->
+    <title>Convert | Portfolio</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+
+    <!-- BOOTSTRAP STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- TEMPLATE STYLES -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- RESPONSIVE STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!-- COLOR STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/colors.css">
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <!-- PORTFOLIO STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/skins/portfolio.css">
+    <script src="js/modernizer-portfolio.js"></script>
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body class="sticky-footer-body">
+
+     <!-- PRELOADER -->
+        <div id="loader">
+            <div class="loader-container">
+                <img src="images/skins/images/portfolio/portfolio-load.gif" alt="" class="loader-site spinner">
+            </div>
+        </div>
+    <!-- END PRELOADER -->
+
+    <!-- ******************************************
+    START SITE HERE
+    ********************************************** -->
+
+    <div class="overlay overlay-door">
+        <button type="button" class="overlay-close">Close</button>
+        <nav>
+            <ul>
+                <li><a href="index-portfolio.html">Home</a></li>
+                <li><a href="version-portfolio-about.html">About Us</a></li>
+                <li class="active"><a href="version-portfolio-portfolio.html">Portfolio</a></li>
+                <li><a href="version-portfolio-contact.html">Contact</a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i>&nbsp; Instagram</a></li>
+                <li><a href="#"><i class="fa fa-dribbble"></i>&nbsp; Dribbble</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="wrapper">
+        <header class="header">
+            <div class="container">
+                <nav class="navbar navbar-default yamm">
+                    <div class="container-fluid">
+                        <div class="navbar-full clearfix">
+                            <div class="pull-left">
+                            <a class="navbar-brand" href="index-portfolio.html"><img src="images/skins/images/portfolio/portfoliologo.png" alt=""></a>
+                            </div>
+                            <div class="pull-right text-right">
+                                <ul class="list-inline">
+                                    <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href="#" id="trigger-overlay"><span class="fa fa-bars"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div><!-- end container -->
+        </header><!-- end header -->
+
+        <section class="section page-title-wrapper littlepad page-title-color">
+            <div class="container">
+                <div class="page-title pull-left">
+                    <h4>Welcome to the my portfolio</h4>
+                    <h3>Our Portfolio</h3>
+                </div><!-- end title -->
+                <div class="pull-right hidden-xs">
+                    <div class="bread">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li class="active">Portfolio</li>
+                        </ol>
+                    </div><!-- end bread -->
+                </div><!-- /.pull-right -->
+            </div>
+        </section><!-- end section -->
+
+        <section class="section lb">
+            <div class="container">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav class="portfolio-filter text-left">
+                                <ul>
+                                    <li><a class="btn btn-default" href="#" data-filter="*">All</a></li>
+                                    <li><a class="btn btn-default" href="#" data-filter=".cat1">Web Design</a></li> 
+                                    <li><a class="btn btn-default" href="#" data-filter=".cat2">Mockup</a></li>
+                                    <li><a class="btn btn-default" href="#" data-filter=".cat3">Photography</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <hr class="invis">
+
+                    <div id="normalportfolio" class="row portfolio two-col-portfolio-wrapper">
+                        <div class="pitem gallery-item item-w1 item-h1 cat1">
+                            <div class="media-element colormagnifier">
+                                <div class="entry">
+                                    <img src="images/skins/images/portfolio/mason_01.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier color1">
+                                        <div class="magni-desc">
+                                            <p>Web Design</p>
+                                            <h4><a href="version-portfolio-single-portfolio.html">Lamb in Desctop</a></h4>
+                                            <a class="firsticon" data-rel="prettyPhoto" href="images/skins/images/portfolio/mason_01.jpg"><i class="fa fa-search"></i></a>
+                                            <a class="secondicon" href="version-portfolio-single-portfolio.html"><i class="fa fa-link"></i></a>
+                                        </div><!-- end team-desc -->
+                                    </div><!-- end magnifier -->
+                                </div>
+                            </div><!-- end media -->
+                        </div><!-- item -->
+
+                        <div class="pitem gallery-item item-w1 item-h1 cat2">
+                            <div class="media-element colormagnifier">
+                                <div class="entry">
+                                    <img src="images/skins/images/portfolio/mason_02.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier color2">
+                                        <div class="magni-desc">
+                                            <p>Web Design</p>
+                                            <h4><a href="version-portfolio-single-portfolio.html">Landscape Web Materials</a></h4>
+                                            <a class="firsticon" data-rel="prettyPhoto" href="images/skins/images/portfolio/mason_02.jpg"><i class="fa fa-search"></i></a>
+                                            <a class="secondicon" href="version-portfolio-single-portfolio.html"><i class="fa fa-link"></i></a>
+                                        </div><!-- end team-desc -->
+                                    </div><!-- end magnifier -->
+                                </div>
+                            </div><!-- end media -->
+                        </div><!-- item -->
+
+                        <div class="pitem gallery-item item-w1 item-h1 cat3">
+                            <div class="media-element colormagnifier">
+                                <div class="entry">
+                                    <img src="images/skins/images/portfolio/mason_03.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier color3">
+                                        <div class="magni-desc">
+                                            <p>Material Design</p>
+                                            <h4><a href="version-portfolio-single-portfolio.html">Cups of Coffee</a></h4>
+                                            <a class="firsticon" data-rel="prettyPhoto" href="images/skins/images/portfolio/mason_03.jpg"><i class="fa fa-search"></i></a>
+                                            <a class="secondicon" href="version-portfolio-single-portfolio.html"><i class="fa fa-link"></i></a>
+                                        </div><!-- end team-desc -->
+                                    </div><!-- end magnifier -->
+                                </div>
+                            </div><!-- end media -->
+                        </div><!-- item -->
+
+                        <div class="pitem gallery-item item-w1 item-h1 cat2">
+                            <div class="media-element colormagnifier">
+                                <div class="entry">
+                                    <img src="images/skins/images/portfolio/mason_04.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier color4">
+                                        <div class="magni-desc">
+                                            <p>Mockup Design</p>
+                                            <h4><a href="version-portfolio-single-portfolio.html">100 white stairs</a></h4>
+                                            <a class="firsticon" data-rel="prettyPhoto" href="images/skins/images/portfolio/mason_04.jpg"><i class="fa fa-search"></i></a>
+                                            <a class="secondicon" href="version-portfolio-single-portfolio.html"><i class="fa fa-link"></i></a>
+                                        </div><!-- end team-desc -->
+                                    </div><!-- end magnifier -->
+                                </div>
+                            </div><!-- end media -->
+                        </div><!-- item -->
+
+                        <div class="pitem gallery-item item-w1 item-h1 cat3">
+                            <div class="media-element colormagnifier">
+                                <div class="entry">
+                                    <img src="images/skins/images/portfolio/mason_05.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier color5">
+                                        <div class="magni-desc">
+                                            <p>Mockup Design</p>
+                                            <h4><a href="version-portfolio-single-portfolio.html">Man and Woman Happy to Work</a></h4>
+                                            <a class="firsticon" data-rel="prettyPhoto" href="images/skins/images/portfolio/mason_05.jpg"><i class="fa fa-search"></i></a>
+                                            <a class="secondicon" href="version-portfolio-single-portfolio.html"><i class="fa fa-link"></i></a>
+                                        </div><!-- end team-desc -->
+                                    </div><!-- end magnifier -->
+                                </div>
+                            </div><!-- end media -->
+                        </div><!-- item -->
+
+                        <div class="pitem gallery-item item-w1 item-h1 cat1">
+                            <div class="media-element colormagnifier">
+                                <div class="entry">
+                                    <img src="images/skins/images/portfolio/mason_06.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier color6">
+                                        <div class="magni-desc">
+                                            <p>Photography</p>
+                                            <h4><a href="version-portfolio-single-portfolio.html">Laptop Workspace Example</a></h4>
+                                            <a class="firsticon" data-rel="prettyPhoto" href="images/skins/images/portfolio/mason_06.jpg"><i class="fa fa-search"></i></a>
+                                            <a class="secondicon" href="version-portfolio-single-portfolio.html"><i class="fa fa-link"></i></a>
+                                        </div><!-- end team-desc -->
+                                    </div><!-- end magnifier -->
+                                </div>
+                            </div><!-- end media -->
+                        </div><!-- item -->
+
+                        <div class="pitem gallery-item item-w1 item-h1 cat2">
+                            <div class="media-element colormagnifier">
+                                <div class="entry">
+                                    <img src="images/skins/images/portfolio/mason_07.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier color7">
+                                        <div class="magni-desc">
+                                            <p>Mockup Design</p>
+                                            <h4><a href="version-portfolio-single-portfolio.html">Web Design Materials</a></h4>
+                                            <a class="firsticon" data-rel="prettyPhoto" href="images/skins/images/portfolio/mason_07.jpg"><i class="fa fa-search"></i></a>
+                                            <a class="secondicon" href="version-portfolio-single-portfolio.html"><i class="fa fa-link"></i></a>
+                                        </div><!-- end team-desc -->
+                                    </div><!-- end magnifier -->
+                                </div>
+                            </div><!-- end media -->
+                        </div><!-- item -->
+
+                        <div class="pitem gallery-item item-w1 item-h1 cat2">
+                            <div class="media-element colormagnifier">
+                                <div class="entry">
+                                    <img src="images/skins/images/portfolio/mason_08.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier color8">
+                                        <div class="magni-desc">
+                                            <p>Mockup Design</p>
+                                            <h4><a href="version-portfolio-single-portfolio.html">Think Like Team Member</a></h4>
+                                            <a class="firsticon" data-rel="prettyPhoto" href="images/skins/images/portfolio/mason_08.jpg"><i class="fa fa-search"></i></a>
+                                            <a class="secondicon" href="version-portfolio-single-portfolio.html"><i class="fa fa-link"></i></a>
+                                        </div><!-- end team-desc -->
+                                    </div><!-- end magnifier -->
+                                </div>
+                            </div><!-- end media -->
+                        </div><!-- item -->
+
+                        <div class="pitem gallery-item item-w1 item-h1 cat2">
+                            <div class="media-element colormagnifier">
+                                <div class="entry">
+                                    <img src="images/skins/images/portfolio/mason_09.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier color9">
+                                        <div class="magni-desc">
+                                            <p>Mockup Design</p>
+                                            <h4><a href="version-portfolio-single-portfolio.html">Our Office Design</a></h4>
+                                            <a class="firsticon" data-rel="prettyPhoto" href="images/skins/images/portfolio/mason_09.jpg"><i class="fa fa-search"></i></a>
+                                            <a class="secondicon" href="version-portfolio-single-portfolio.html"><i class="fa fa-link"></i></a>
+                                        </div><!-- end team-desc -->
+                                    </div><!-- end magnifier -->
+                                </div>
+                            </div><!-- end media -->
+                        </div><!-- item -->
+
+                        <div class="pitem gallery-item item-w1 item-h1 cat2">
+                            <div class="media-element colormagnifier">
+                                <div class="entry">
+                                    <img src="images/skins/images/portfolio/mason_11.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier color2">
+                                        <div class="magni-desc">
+                                            <p>Mockup Design</p>
+                                            <h4><a href="version-portfolio-single-portfolio.html">Awesome ebook collection</a></h4>
+                                            <a class="firsticon" data-rel="prettyPhoto" href="images/skins/images/portfolio/mason_11.jpg"><i class="fa fa-search"></i></a>
+                                            <a class="secondicon" href="version-portfolio-single-portfolio.html"><i class="fa fa-link"></i></a>
+                                        </div><!-- end team-desc -->
+                                    </div><!-- end magnifier -->
+                                </div>
+                            </div><!-- end media -->
+                        </div><!-- item -->
+                        <div class="pitem gallery-item item-w1 item-h1 cat1">
+                            <div class="media-element colormagnifier">
+                                <div class="entry">
+                                    <img src="images/skins/images/portfolio/mason_10.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier color3">
+                                        <div class="magni-desc">
+                                            <p>Mockup Design</p>
+                                            <h4><a href="version-portfolio-single-portfolio.html">Man Working Hardly</a></h4>
+                                            <a class="firsticon" data-rel="prettyPhoto" href="images/skins/images/portfolio/mason_10.jpg"><i class="fa fa-search"></i></a>
+                                            <a class="secondicon" href="version-portfolio-single-portfolio.html"><i class="fa fa-link"></i></a>
+                                        </div><!-- end team-desc -->
+                                    </div><!-- end magnifier -->
+                                </div>
+                            </div><!-- end media -->
+                        </div><!-- item -->
+
+                        <div class="pitem gallery-item item-w1 item-h1 cat2">
+                            <div class="media-element colormagnifier">
+                                <div class="entry">
+                                    <img src="images/skins/images/portfolio/mason_12.jpg" alt="" class="img-responsive">
+                                    <div class="magnifier color1">
+                                        <div class="magni-desc">
+                                            <p>Mockup Design</p>
+                                            <h4><a href="version-portfolio-single-portfolio.html">Lamp in Desktop</a></h4>
+                                            <a class="firsticon" data-rel="prettyPhoto" href="images/skins/images/portfolio/mason_12.jpg"><i class="fa fa-search"></i></a>
+                                            <a class="secondicon" href="version-portfolio-single-portfolio.html"><i class="fa fa-link"></i></a>
+                                        </div><!-- end team-desc -->
+                                    </div><!-- end magnifier -->
+                                </div>
+                            </div><!-- end media -->
+                        </div><!-- item -->
+                    </div><!-- end gallery -->
+                </div><!-- end content -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="text-center">
+                            <ul class="pagination">
+                                <li><a class="active" href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </section><!-- end section -->
+
+        <div class="sticky-footer">
+            <footer class="footer section light-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="widget clearfix">
+                                <div class="widget-title">
+                                    <h4>Welcome to the Convert</h4>
+                                </div><!-- end widget-title -->
+                                <div class="about-widget">
+                                    <p>Hi there, welcome to the &copy;Convert Web Solutions INC. We are small group who design beautiful website templates, creative mobile applications, graphics and more. Please don't forget to check our awesome freebie items.</p>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                </div><!-- end about-widget -->
+                            </div><!-- end widget -->
+                        </div><!-- end col -->
+
+                        <div class="col-md-6 col-sm-12 lastwidget">
+                            <div class="widget clearfix">
+                                <div class="widget-title">
+                                    <h4>Email Newsletter</h4>
+                                </div><!-- end about -->
+                                <div class="newsletter-widget">
+                                    <form class="row">
+                                        <div class="col-md-12">
+                                        <p>Subscribe our newsletter form for more premium items, freebie items. 20.000+ subscribers can not be wrong!</p>
+                                        </div>
+                                        <div class="col-md-5">
+                                        <input type="text" class="form-control input-lg" placeholder="Your name" />
+                                        </div>
+                                        <div class="col-md-5">
+                                        <input type="email" class="form-control input-lg" placeholder="Email" />
+                                        </div>
+                                        <div class="col-md-2">
+                                        <button class="btn btn-primary">Subscribe</button>
+                                        </div>
+                                    </form>
+                                </div><!-- end newsletter -->
+                            </div><!-- end widget -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </footer><!-- end footer -->
+            <footer class="copyrights light-copyrights">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="copylinks">
+                                <ul class="list-inline">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Terms of Usage</a></li>
+                                    <li><a href="#">Trademark</a></li>
+                                    <li><a href="#">License</a></li>
+                                </ul><!-- end ul -->
+                                <p>Company Name &copy; 2016</p>
+                            </div><!-- end links -->
+                        </div><!-- end col -->
+
+                        <div class="col-md-6 col-sm-12">
+                            <div class="footer-social text-right">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-github"></i></a>
+                                <a class="dmtop" href="#"><i class="fa fa-arrow-up"></i></a>
+                            </div>
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </footer><!-- end copyrights -->
+        </div>
+    </div>
+
+    <!-- ******************************************
+    /END SITE
+    ********************************************** -->
+
+
+    <!-- ******************************************
+    DEFAULT JAVASCRIPT FILES
+    ********************************************** -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/stickyfooter.js"></script>
+
+    <!-- ******************************************
+    ADD YOUR CUSTOM JAVASCRIPT FILES HERE
+    EXAMPLE : SLIDER, PORTFOLIO etc.
+    ********************************************** -->
+
+    <!-- PORTFOLIO -->
+    <script src="js/isotope.js"></script> 
+    <script src="js/imagesloaded.pkgd.js"></script>  
+    <script src="js/portfolio_03.js"></script>
+
+    <!-- PORTFOLIO VERSION -->
+    <script src="js/classie.js"></script>
+
+</body>
+</html>

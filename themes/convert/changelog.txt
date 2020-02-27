@@ -1,0 +1,4 @@
+*** Changelog - Convert Website Template ***
+
+2016.06.22 - version 1.0
+	* First release!
